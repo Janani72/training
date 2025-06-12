@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .paragraph{
+            background-color: lightpink;
+        }
+        #one{
+            color:darkgrey;
+        }
+        #two{
+            color: blanchedalmond;
+        }
+        #three{
+            color: chartreuse;
+        }
+        #one,#two,#three{
+            background-color: green;
+        }
+        .text{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:900;
+            font-size: medium;
+            font-style: oblique;
+            letter-spacing: 2px;
+            line-height:2px;
+            text-transform: capitalize;
+            text-align:justify;
+            
+        }
+       h1{
+        padding:10px;
+        border: 10px double red;
+        margin: 10px 20px;
+       }
+    </style>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et temporibus eaque dignissimos fuga iure culpa fugit
+    <h1>hlooow</h1>
+    <p class="text"> ipsum, dolor sit amet consectetur adipisicing elit. Velit fugiat fuga quas! Consequatur eius incidunt tempora, autem similique aliquam officiis?</p>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Et temporibus eaque dignissimos fuga iure culpa fugit
         eum accusamus consequatur, facilis incidunt repellat sit provident quam quidem? Nihil, maxime nam temporibus
         distinctio eius nemo quas amet, vel minus perspiciatis ex fuga laborum quaerat laudantium pariatur, debitis quos
         nulla tempore sed suscipit deserunt aspernatur quidem dolorum.<hr> Distinctio cumque molestiae, architecto
@@ -18,9 +53,9 @@
         atque aliquid fuga dolorum.</p>
     <img src="./assests/whatsapp2.png" alt="whatsapp" width="200px" height="200px">
     <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <li id="one" >one</li>
+        <li id="two">two</li>
+        <li id="three">three</li>
     </ul>
     <ol>
         <li>one</li>
