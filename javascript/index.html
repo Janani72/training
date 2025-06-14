@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="text">hello!!</h1>
+    <!-- <h1 id="text2">dgdg</h1> -->
+    <button onclick="handlebuttionclicked()">click me!</button>
+    <br><br>
+
+    <input type="text" id="name" placeholder="enter the name">
+    <button onclick="addname()"></button>
+    <ol id="list">
+
+    </ol>
+    <script>
+
+        function handlebuttionclicked(){
+            console.log(" handle button clicked");
+            const result = document.querySelector("#text")
+            result.innerHTML = result.innerHTML === "hello KPRCAS" ? "hello world" : "hello you"
+            // document.getElementById("text").innerHTML="againme"
+            // document.querySelector("#text2").innerHTML="by mee"
+        }
+        function addname() {
+            const name = document.getElementById("name")
+            const li = document.createElement("li");
+            li.innerText=name;
+            document.getElementById("list").append(li)
+        }
+        
+    </script>
+</body>
+
+</html>
